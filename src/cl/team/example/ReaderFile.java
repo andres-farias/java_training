@@ -10,12 +10,10 @@ import java.io.IOException;
 public class ReaderFile {
     public static void main(String[] args) {
         try (FileReader fileReader = new FileReader("/tmp/Ejemplo.txt")){
-            int ch = 0;
+            int ch;
             while ((ch = fileReader.read()) != -1){
                 System.out.print((char)ch);
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
