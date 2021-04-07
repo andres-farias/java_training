@@ -1,4 +1,4 @@
-package cl.team.modeling.math;
+package cl.team.modeling.math.figures;
 
 /**
  * @author Andrés Farías (a.farias@globant.com)
