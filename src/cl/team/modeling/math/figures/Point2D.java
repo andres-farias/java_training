@@ -21,4 +21,8 @@ public class Point2D {
     public double getOrdered() {
         return Math.sin(this.theta) * this.radius;
     }
+
+    public void setAbscissa(double x){
+
+    }
 }
