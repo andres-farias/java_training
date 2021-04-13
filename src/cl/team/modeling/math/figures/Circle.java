@@ -12,7 +12,7 @@ public class Circle {
     /**
      * This is the center of the circle
      */
-    private Point2D center;
+    private Point center;
 
     /**
      * This is the radius of the circle
@@ -20,11 +20,11 @@ public class Circle {
     private double radius;
 
     public Circle() {
-        this.center = new Point2D(0, 0);
+        this.center = new Point(0, 0);
         this.radius = 0;
     }
 
-    public Circle(Point2D center, double radius) {
+    public Circle(Point center, double radius) {
         this.center = center;
         this.radius = radius;
     }
@@ -36,5 +36,9 @@ public class Circle {
      */
     public double getPerimeter() {
         return 2 * Math.PI * radius;
+    }
+
+    public double getArea (){
+        return Math.PI * Math.pow(radius,2);
     }
 }
